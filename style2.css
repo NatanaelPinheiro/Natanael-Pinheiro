@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+html{
+    margin: 0 10%;
+}
+body {
+    box-shadow: 0px 0px 20px #6770754d;
+    font-size: 1.6rem; 
+    height: 100vh;
+}
+main{
+    background-color: #D2EEFA;
+}
+
+/* -------------- HEADER -----------------*/
+
+.head{
+    background-color: #204255;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+}
+.links {
+    display: flex;
+}
+.links li{
+    list-style: none;
+    margin: auto 15em;
+}
+h1, a{
+    color: #e6e6e6;
+}
+a{
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+h1 {
+    font-size: 3.2rem;
+    font-weight: normal;
+}
+.devLi a{
+    color: #7cacf3;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    h1{
+        font-size: 2.5rem;
+    }
+    .links a{
+        font-size: 1.5rem;
+    }
+    .links li{
+        margin: auto 1.5rem;
+    }
+}
+@media screen and (max-width: 768px){
+    header {
+        height: fit-content;
+    }
+    .head{
+        display: block;
+        height: fit-content;
+        position: fixed;
+        width: 80%;
+    }
+    h1{
+        font-size: 2.5rem;
+        text-align: center;
+        border-bottom: 1px #ffffff79 solid;
+    }
+    header .links {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .links a{
+        font-size: 1.5rem;
+        margin: auto 2rem;
+    }
+}
+@media screen and (max-width: 470px){
+    .links li{
+        margin: auto 0;
+    }
+    html{
+        margin: 0;
+    }
+    .head{
+        width: 100%;
+    }
+}
+
+/* ---------- MAIN --------- */
+
+.home button{
+    padding: 5px 20px;
+    margin-top: 2rem;
+    transform: translateX(-50%);
+   
+    background-image: linear-gradient(to right, #15F410, #ADFE29);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #002e4680;
+    border: none;
+}
+.home{
+    width: 50%;
+    margin-left: auto;
+}
+h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+    color: #204255;
+}
+p{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    color: #204255;
+}
+.main{
+    height: 50vh;
+    width: 50%;
+    margin: 15rem auto 0 auto;
+    text-align: center;
+}
+@media screen and (max-width: 768px){
+    .main{
+        height: 80vh;
+    }
+    .home button{
+        margin-top: 7rem;
+    }
+}
+/* ------ FOOTER ------ */
+
+footer {
+    background-color: #D2EEFA;
+    display: flex;
+    border-bottom: 10px #10f410 solid;
+}

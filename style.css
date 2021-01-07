@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+html{
+    margin: 0 10%;
+}
+body {
+    box-shadow: 0px 0px 20px #6770754d;
+    font-size: 1.6rem; 
+}
+main{
+    background-color: #D2EEFA;
+}
+
+/* -------------- HEADER -----------------*/
+
+.head{
+    background-color: #204255;
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.links {
+    display: flex;
+}
+.links li{
+    list-style: none;
+    margin: auto 15em;
+}
+h1, a{
+    color: #e6e6e6;
+}
+a{
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+h1 {
+    font-size: 3.2rem;
+    font-weight: normal;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    h1{
+        font-size: 2.5rem;
+    }
+    .links a{
+        font-size: 1.5rem;
+    }
+    .links li{
+        margin: auto 1.5rem;
+    }
+}
+@media screen and (max-width: 768px){
+    header {
+        height: fit-content;
+    }
+    .head{
+        display: block;
+        height: fit-content;
+        position: fixed;
+        width: 80%;
+    }
+    h1{
+        font-size: 2.5rem;
+        text-align: center;
+        border-bottom: 1px #ffffff79 solid;
+    }
+    header .links {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .links a{
+        font-size: 1.5rem;
+        margin: auto 2rem;
+    }
+}
+@media screen and (max-width: 470px){
+    .links li{
+        margin: auto 0;
+    }
+    html{
+        margin: 0;
+    }
+    .head{
+        width: 100%;
+    }
+}
+
+/* ----------  MAIN - .FIRST HALF  ------------- */
+
+.first-half {
+    display: flex;
+    flex-wrap: nowrap;
+    height: auto;
+}
+.first-half p{
+    color: #0c28319f;
+    font-weight: bold;
+    font-size: 3rem;
+
+    margin-top: 100px;
+    margin-left: 6rem;
+    margin-right: 25rem;
+    margin-bottom: 15rem;
+
+    width: 40%;
+    text-align: center;
+}
+@media screen and (min-width: 1100px) and (max-width: 1324px){
+    .first-half p{
+        margin-right: 20rem;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1100px){
+    .first-half p{
+        margin-right: 15rem;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px){
+    .first-half p{
+        margin-left: 4rem;
+        margin-right: 10rem;
+        margin-bottom: 15rem;
+        font-size: 2.5rem;
+    }
+    .first-half {
+        justify-content: space-between;
+    }
+    .first-half .ctt{
+        margin-right: 3rem;
+    }   
+}
+@media screen and (max-width:768px){
+    .first-half{
+        flex-direction: column;
+    }
+    .first-half p{
+        width: 90%;
+        margin: 9rem auto 0px;
+        font-size: 2rem;
+    }
+    .ctt {
+        margin-bottom: 10vh;
+    }
+}
+@media screen and (max-width: 470px){
+    .ctt .contact{
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+}
+@media screen and (max-width: 370px){
+    .ctt .contact{
+        font-size: 2.8rem;
+        color: #204155e1;
+    }
+}
+@media screen and (max-width: 347px){
+    .ctt .contact{
+        font-size: 2.5rem;
+    }
+}
+/* --------- .CONTACT --------- */
+
+.first-half .ctt {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-cta{
+    margin: 5px 50%;
+    display: flex;
+    flex-direction: column;
+}
+.ctt h2 {
+    font-size: 3rem;
+}
+.first-half h2, .sec-half h2, .third-half, p {
+    color: #204255;
+}
+.btn-cta button{
+    background-image: linear-gradient(to right, #15F410, #ADFE29);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #002e4680;
+    border: none;
+
+    color: #1B4F0E;
+    font-size: 2rem;
+    text-align: center;
+
+    line-height: 10px;
+    margin-top: 10px;
+    height: 35px;
+    width: 180px;
+
+    transition: all 0.2s ease-in-out;
+}
+.btn-cta button:hover {
+    transform: scale(1.05);
+}
+
+/* -------- MAIN - .SEC HALF --------- */
+
+.sec-half h2{
+    margin: 0 9rem;
+    font-size: 3.5rem;
+}
+.cont {
+    display: flex;
+    margin-top:20px;
+    margin-bottom: 6rem;
+}
+.cont img{
+    width: 250px;
+    margin: auto 8rem;
+}
+.cont .text p{
+    font-size: 1.5rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
+    line-height: 2em;
+    width: 70%;
+    
+}
+.cont .text i{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1023px){
+    .sec-half h2{
+        text-align: center;
+    }
+    .cont {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont img{
+        width: 200px;
+        margin-top: auto; 
+    }
+    .cont .text{
+        margin-top: 2rem;
+    }
+    .cont .text p{
+        width: 80%;
+        margin: 1rem auto;
+    }
+}
+@media screen and (max-width: 470px){
+    .sec-half h2{
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width: 375px){
+    .sec-half h2{
+        font-size: 3rem;
+        color:#204155e1;
+    }
+}
+@media screen and (max-width: 347px){
+    .sec-half h2{
+        font-size: 2.5rem;
+    }
+    .sec-half img{
+        width: 190px;
+    }
+}
+@media screen and (max-width: 300px){
+    .sec-half h2{
+        margin: auto 2rem;
+    }
+}
+
+/* ------ FOOTER ------ */
+
+footer {
+    background-color: #D2EEFA;
+    display: flex;
+    border-bottom: 10px #10f410 solid;
+}
